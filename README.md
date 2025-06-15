@@ -83,9 +83,9 @@ python BirdDistanceAnalysis.py "20250520_043000.BirdNET.results.csv" "Strix aluc
 
 ## 🧪 Sample Output Columns
 
-| Start (s) | End (s) | Scientific name | Common name | Confidence | File | Total Amplitude | Median Amplitude | Mean Amplitude | Max Amplitude | Min Amplitude|
-|-|-|-|-|-|-|-|-|-|-|-|
-|660.0|663.0|Strix aluco|Bosuil|0.6636|C:\Users\sande\Desktop\BirdDistanceAnalysis\OneDrive_10_15-6-2025\20250520_043000.WAV|1047.032|0.6182955|0.69755626|5.102837|0.02249485|
+| Start (s) | End (s) | Scientific name | Common name | Confidence | File                                     | Total Amplitude | Median Amplitude | Mean Amplitude | Max Amplitude | Min Amplitude|
+|-|-|-|-|-|------------------------------------------|-|-|-|-|-|
+|660.0|663.0|Strix aluco|Bosuil|0.6636|20250520_043000.WAV |1047.032|0.6182955|0.69755626|5.102837|0.02249485|
 
 ---
 
