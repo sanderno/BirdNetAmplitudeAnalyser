@@ -136,8 +136,18 @@ def main(csv_file, target_bird, min_hz, max_hz, output_file):
     combined_df.to_csv(output_file, index=False)
     print("🔬 Done! Results written to CSV file.")
 
+
+def write_arguments_file(args):
+    with open(f"{args.csv_file.rstrip('.csv')}+analysis_freqAmplitude.log", 'w') as f:
+        f.write("csv_file, scientific_name, hz_interval, output(optional)\n")
+        f.write(f"{args.csv_file},")
+        f.write(f"{args.scientific_name},")
+        f.write(f"{args.hz_interval},")
+        f.write(f"{args.output if args.output else 'Not specified'}\n")
+
 if __name__ == "__main__":
     args = parse_args()
+    write_arguments_file(args)
     print("CSV File:", args.csv_file)
     csv_file = args.csv_file
     print("Scientific Name:", args.scientific_name)
