@@ -93,7 +93,7 @@ def main(csv_file, target_bird, min_hz, max_hz, output_file):
     df = pd.read_csv(csv_file)
     matches = df[(df["Scientific name"] == target_bird)]
     # Display the dataframe
-    print(df)
+    # print(df)
 
     # Pre‑load each unique file into a cache
     audio_cache = {}
@@ -109,7 +109,6 @@ def main(csv_file, target_bird, min_hz, max_hz, output_file):
         end = row["End (s)"]
         confidence = row["Confidence"]
         file = row["File"]
-        print(f"loading {file}")
         y, sr = audio_cache[file_path]
 
         # Do your custom action here
